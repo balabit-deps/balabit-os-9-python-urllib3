@@ -1,3 +1,17 @@
+python-urllib3 (1.26.5-1~exp1ubuntu0.1) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: http cookie leakage via http redirect
+    - debian/patches/CVE-2023-43804.patch: removes the cookie from the 
+      http request when it is redirected to a different origin.
+    - CVE-2023-43804
+  * SECURITY UPDATE: http body leakage via http redirect
+    - debian/patches/CVE-2023-45803.patch: removes the body from the 
+      http request when it is redirected to a different origin and the 
+      http verb is changed to GET.
+    - CVE-2023-45803
+
+ -- Jorge Sancho Larraz <jorge.sancho.larraz@canonical.com>  Tue, 24 Oct 2023 17:20:49 +0200
+
 python-urllib3 (1.26.5-1~exp1) unstable; urgency=medium
 
   * New upstream version 1.26.5
