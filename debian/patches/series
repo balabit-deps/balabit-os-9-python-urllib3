@@ -3,3 +3,4 @@
 05_avoid-embedded-ssl-match-hostname.patch
 CVE-2023-43804.patch
 CVE-2023-45803.patch
+CVE-2024-37891.patch
