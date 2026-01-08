@@ -1,3 +1,13 @@
+python-urllib3 (1.26.5-1~exp1ubuntu0.5) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Decompression bomb in HTTP redirect responses.
+    - debian/patches/CVE-2026-21441.patch: Add decode_content to self.read()
+      in src/urllib3/response.py. Add tests in
+      test/with_dummyserver/test_connectionpool.py.
+    - CVE-2026-21441
+
+ -- Hlib Korzhynskyy <hlib.korzhynskyy@canonical.com>  Thu, 08 Jan 2026 16:06:10 -0330
+
 python-urllib3 (1.26.5-1~exp1ubuntu0.4) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service due to unbounded decompression chain.
