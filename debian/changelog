@@ -1,3 +1,13 @@
+python-urllib3 (1.26.5-1~exp1ubuntu0.6) jammy-security; urgency=medium
+
+  * SECURITY REGRESSION: Missing _has_decoded_content from CVE-2026-21441
+    (LP: #2138420)
+    - debian/patches/CVE-2026-21441-fix1.patch: Implement _has_decoded_content
+      and decoded checks in src/urllib3/response.py. Add tests in
+      test/test_response.py.
+
+ -- Hlib Korzhynskyy <hlib.korzhynskyy@canonical.com>  Fri, 16 Jan 2026 19:39:26 -0330
+
 python-urllib3 (1.26.5-1~exp1ubuntu0.5) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Decompression bomb in HTTP redirect responses.
