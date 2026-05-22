@@ -1,3 +1,13 @@
+python-urllib3 (1.26.5-1~exp1ubuntu0.7) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: sensitive headers not stripped in cross-origin redirects
+    - debian/patches/CVE-2026-44431.patch: remove sensitive headers in proxy
+      pools too in src/urllib3/connectionpool.py,
+      test/with_dummyserver/test_proxy_poolmanager.py.
+    - CVE-2026-44431
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 22 May 2026 16:41:35 -0400
+
 python-urllib3 (1.26.5-1~exp1ubuntu0.6) jammy-security; urgency=medium
 
   * SECURITY REGRESSION: Missing _has_decoded_content from CVE-2026-21441
