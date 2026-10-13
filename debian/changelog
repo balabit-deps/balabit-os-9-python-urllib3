@@ -1,3 +1,12 @@
+python-urllib3 (1.26.5-1~exp1ubuntu0.8) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of Service
+    - debian/patches/CVE-2026-97689.patch: Bound chunk-size line reads
+      to prevent memory exhaustion DoS
+    - CVE-2026-97689
+
+ -- Bruce Cable <bruce.cable@canonical.com>  Tue, 13 Oct 2026 14:01:23 +1100
+
 python-urllib3 (1.26.5-1~exp1ubuntu0.7) jammy-security; urgency=medium
 
   * SECURITY UPDATE: sensitive headers not stripped in cross-origin redirects
